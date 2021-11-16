@@ -1,0 +1,11 @@
+<!-- (click)="onSelect()" -->
+<a class="list-group-item clearfix p-3" [routerLink]="[index]">
+  <div class="float-start">
+    <h5 class="list-group-item-heading">{{recipe.name}}</h5>
+    <p class="list-group-item-text">{{recipe.description}}</p>
+  </div>
+
+  <span class="float-end">
+    <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-responsive">
+  </span>
+</a>

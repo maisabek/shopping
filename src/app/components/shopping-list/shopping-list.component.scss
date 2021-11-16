@@ -1,0 +1,12 @@
+@import '../../shared/variable';
+a{cursor:pointer}
+#shopping-edit{
+  margin: 2% 0px 25%;
+  padding: 50px;
+  color: white;
+  background: $main-color-bold;
+  border-radius: 4px;
+}
+#shopping-item{
+  margin: 2% 0px 25%;
+}

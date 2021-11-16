@@ -1,0 +1,22 @@
+@import '../../../shared/variable';
+@import '../../../shared/mobile';
+.menu{
+  margin-left: 2%;
+  .dropdown-toggle::after {
+     margin-left: 30% !important;
+     color: $main-color !important;
+  }
+}
+a{cursor: pointer}
+
+.navbar-toggler:focus {
+   box-shadow: 0 0 0 0 !important;
+}
+.fa-cart-plus {
+  color: $main-color-bold;
+  margin-left: 55% !important;
+  cursor: pointer;
+}
+.navbar-brand{
+  color: $main-color;
+}

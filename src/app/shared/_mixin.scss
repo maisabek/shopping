@@ -1,0 +1,7 @@
+
+@mixin box-shadow($width,$height,$blur,$color) {
+box-shadow: $width $height $blur $color;
+-webkit-box-shadow: $width $height $blur $color;
+-moz-box-shadow: $width $height $blur $color;
+-o-box-shadow: $width $height $blur $color;
+}

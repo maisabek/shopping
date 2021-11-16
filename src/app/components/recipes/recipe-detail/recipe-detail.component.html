@@ -1,0 +1,49 @@
+<div class="row mt-5">
+  <div class="col-12 mt-4">
+    <img [src]="recipe.imagePath" class="img-responsive w-50 h-100 mt-5" alt="">
+  </div>
+</div>
+
+
+<div class="row mt-4">
+  <div class="col-5">
+    <h5>{{recipe.name}}</h5>
+
+  </div>
+  <div class="col-6">
+    <div class="btn-group" dropdown>
+      <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+              aria-controls="dropdown-basic">
+              Mange Recipe <span class="caret"></span>
+      </button>
+      <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu p-3"
+          role="menu" aria-labelledby="button-basic">
+          <li><a (click)="onAddToShoppingList()">To Shopping List</a></li>
+          <li><a>Edit Recipe</a></li>
+          <li><a>Delete Recipe</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12">
+    {{recipe.description}}
+
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12">
+   <ul class="list-group">
+     <li class="list-group-item" *ngFor="let ingredient of recipe.ingredients">
+      {{ingredient.name}} - {{ingredient.amount}}
+     </li>
+   </ul>
+  </div>
+</div>
+
+

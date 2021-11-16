@@ -1,0 +1,75 @@
+<section id="header">
+<div id="overlay">
+  <div class="container">
+    <!-- <app-navbar></app-navbar> -->
+    <div id="content">
+    <h5 class="text-white wow flash h3" data-wow-delay="1s" data-wow-duration="5s">Our Resturant</h5>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius tempor augue et semper</p>
+      <button class="btn bg-transparent border border-white text-white mt-1 w-25">serve</button>
+    </div>
+    </div>
+</div>
+</section>
+
+
+<section id="about mt-5">
+  <div class="container">
+   <div class="row">
+     <div class="col-12 col-md-5 mt-5">
+       <img src="assets/Images/service.jpg" class="w-100">
+     </div>
+     <div class="col-12 col-md-7 mt-5" id="timeline">
+       <div class="row mt-5">
+         <div class="col-5">
+           <div class="row">
+            <div class="col-12 card p-3">
+              <h5>choose what you want</h5>
+              <p>11 hours ago via Twitter</p>
+            </div>
+               <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+
+               <div class="col-12 card p-3 timeLine-content-left">
+                <h5>Success</h5>
+                <p>11 hours ago via Twitter</p>
+              </div>
+              <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+           </div>
+         </div>
+
+         <div class="col-1 mx-3">
+           <div class="TimeLine-line"></div>
+         </div>
+
+         <div class="col-5">
+          <div class="row">
+            <div class="col-12 card p-3 timeLine-content">
+              <h5>Pay By Credit Card</h5>
+              <p>11 hours ago via Twitter</p>
+            </div>
+            <i class="fa fa-check" aria-hidden="true"></i>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+  </div>
+</section>
+
+
+
+
+
+<section id="recipes">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 clearfix">
+        <button class="btn float-end recipes-btn border btn-sm border-1 p-1" routerLinkActive="active"><a routerLink="/recipe" class="nav-link cursor-pointer">
+          <i class="fa fa-arrow-circle-o-right me-1" aria-hidden="true"></i>all
+        </a></button>
+      </div>
+      <div class="col-md-12">
+        <app-recipes></app-recipes>
+      </div>
+    </div>
+  </div>
+</section>

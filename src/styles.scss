@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+.img-responsive{max-height: 50px;}
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+@import './app/shared/variable';
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: $main-color-bold;
+}
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $main-color;
+}
+

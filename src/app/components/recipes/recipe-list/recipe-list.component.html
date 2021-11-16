@@ -1,0 +1,19 @@
+<div class="row mt-5">
+  <div class="col-12 mt-3">
+    <button class="btn btn-primary">New Recipe</button>
+  </div>
+</div>
+<div class="row mt-3">
+<div class="col-12">
+<app-recipe-item
+*ngFor="let recipeEl of recipeService.getRecipes();let i=index"
+[recipe]="recipeEl"
+[index]="i"
+>
+<!-- (RecipeSelected)="onRecipeSelected(recipeEl)" -->
+</app-recipe-item>
+</div>
+</div>
+
+
+

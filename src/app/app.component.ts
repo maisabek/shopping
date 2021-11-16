@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { User } from './models/User';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'courses';
+  constructor(){}
+  loadedFeature="recipe"
+  onNavigate(feature:string){
+   this.loadedFeature=feature
+  }
 }
