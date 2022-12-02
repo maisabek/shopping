@@ -20,3 +20,8 @@ a{cursor: pointer}
 .navbar-brand{
   color: $main-color;
 }
+select{
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

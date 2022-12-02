@@ -23,6 +23,7 @@ import { NgwWowModule } from 'ngx-wow';
 
 import { WebcamModule } from 'ngx-webcam';
 import { RecipeStartComponent } from './components/recipes/recipe-start/recipe-start.component';
+import { RecipeEditComponent } from './components/recipes/recipe-edit/recipe-edit.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { RecipeStartComponent } from './components/recipes/recipe-start/recipe-s
     ShoppingListComponent,
     ShoppingEditComponent,
     dropdownDirective,
-    RecipeStartComponent
+    RecipeStartComponent,
+    RecipeEditComponent
   ],
   imports: [
     BrowserModule,

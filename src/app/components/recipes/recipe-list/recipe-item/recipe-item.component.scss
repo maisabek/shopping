@@ -1,6 +1,16 @@
 @import '../../../../shared/variable';
+// #recipe-item{
+//   margin: 5% 0px 30%;
+// }
 .img-responsive{
   width: 83px;
 }
 a{cursor:pointer}
-h5{font-family: cursive;color:$main-color;}
+h5{font-family: cursive;color:$main-color-bold;}
+.active{
+background: $main-color-bold !important;
+color: white !important;
+h5{
+  color: white !important;
+}
+}

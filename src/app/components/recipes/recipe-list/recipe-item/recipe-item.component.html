@@ -1,5 +1,6 @@
 <!-- (click)="onSelect()" -->
-<a class="list-group-item clearfix p-3" [routerLink]="[index]">
+<section id="recipe-item">
+<a class="list-group-item clearfix p-3" [routerLink]="[index]" routerLinkActive="active">
   <div class="float-start">
     <h5 class="list-group-item-heading">{{recipe.name}}</h5>
     <p class="list-group-item-text">{{recipe.description}}</p>
@@ -9,3 +10,4 @@
     <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-responsive">
   </span>
 </a>
+</section>

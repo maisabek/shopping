@@ -1,6 +1,6 @@
 <div class="row mt-5">
   <div class="col-12 mt-4">
-    <img [src]="recipe.imagePath" class="img-responsive w-50 h-100 mt-5" alt="">
+    <img [src]="recipe.imagePath" class="w-50 h-100 mt-2" alt="">
   </div>
 </div>
 
@@ -19,7 +19,7 @@
       <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu p-3"
           role="menu" aria-labelledby="button-basic">
           <li><a (click)="onAddToShoppingList()">To Shopping List</a></li>
-          <li><a>Edit Recipe</a></li>
+          <li (click)="onRecipeEdit()"><a>Edit Recipe</a></li>
           <li><a>Delete Recipe</a></li>
       </ul>
     </div>

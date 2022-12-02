@@ -1,5 +1,10 @@
+@import '../../../shared/variable';
 .show {
   display: block;
 }
 #dropdown-basic li{cursor: pointer;}
 h5{font-family: cursive;}
+#button-basic{
+background: $main-color-bold;
+color: white;
+}
